@@ -7,7 +7,7 @@ class Listing(models.Model):
     description = models.TextField()
     price_per_night = models.DecimalField(max_digits=10, decimal_places=2)
     available = models.BooleanField(default=True)  #  This line must exist
-    image = models.ImageField(upload_to='listings/', blank=True, null=True)
+    
 
     def __str__(self):
         return self.title
